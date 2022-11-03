@@ -1,21 +1,24 @@
-package ArraList;
+package LinkedList;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Test {
     public static void main(String[] args) {
-        ArrayList al=new ArrayList();
-        al.add(44);
-        al.add("Ball");
-        al.add(55.4);
-        al.add('m');
-        al.add("maher");
-        System.out.println(al);
-        al.remove('m');
-        System.out.println(al);
-        System.out.println(al.contains('a'));
-        System.out.println(al.get(2));
-        System.out.println(al.size());
+        LinkedList ll=new LinkedList();
+        ll.add(55);
+        ll.add(44.3);
+        ll.add("maher");
+        ll.add('A');
+        System.out.println(ll);
 
+        System.out.println( ll.removeFirst());
+         System.out.println(ll.removeLast());
+        System.out.println("this is first element now:"+ll.getFirst());
+        System.out.println(ll);
+        System.out.println();
+        System.out.println(ll.size());
+        System.out.println(ll.indexOf('A')+" must be deleted");
+        ll.clear();
+        System.out.println(ll+" must be empty");
     }
 }

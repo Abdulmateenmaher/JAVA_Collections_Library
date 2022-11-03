@@ -1,24 +1,27 @@
-package Priority_Queue;
+package Queue;
 
-import java.util.PriorityQueue;
+import java.util.ArrayDeque;
+import java.util.Queue;
 
 public class Test {
     public static void main(String[] args) {
-        PriorityQueue pq=new PriorityQueue();
-        pq.add(5);
-        pq.add(4);
-        pq.add(2);
-        pq.add(3);
-//        pq.add('A');
-//        pq.add('D');
-//        pq.add('C');
-//        pq.add('B');
-        pq.offer(1);
-        System.out.println(pq);
-        pq.remove();
-        System.out.println(pq.peek());
-        pq.clear();
-        System.out.println(pq);
+        Queue q=new ArrayDeque();
+        //add element
+        q.add(55);
+        //also add element
+        q.offer("maher");
+        //peek the first element
+        System.out.println(q);
+        System.out.println(q.peek());
+        //remove the last element
+        q.remove();
+        System.out.println(q);
+        System.out.println(q.isEmpty());
+
+        q.add('A');
+        System.out.println(q);
+        q.clear();
+
 
     }
 }

@@ -1,24 +1,24 @@
-package Lists;
+package Priority_Queue;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.PriorityQueue;
 
 public class Test {
     public static void main(String[] args) {
-        List list=new LinkedList();
-        list.add("Car");
-        list.add("Bike");
-        list.add('A');
-        System.out.println(list);
-        list.remove("Car");
-        list.add(2022);
-        list.add(55.4);
-        System.out.println(list.get(3));
-
-        list.add(4);
-        System.out.println(list.equals(4));
-        System.out.println(list);
-
+        PriorityQueue pq=new PriorityQueue();
+        pq.add(5);
+        pq.add(4);
+        pq.add(2);
+        pq.add(3);
+//        pq.add('A');
+//        pq.add('D');
+//        pq.add('C');
+//        pq.add('B');
+        pq.offer(1);
+        System.out.println(pq);
+        pq.remove();
+        System.out.println(pq.peek());
+        pq.clear();
+        System.out.println(pq);
 
     }
 }

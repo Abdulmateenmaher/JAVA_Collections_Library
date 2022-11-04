@@ -1,26 +1,22 @@
-package Linked_Hashset;
+package TreeSet;
 
 import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 public class Test {
     public static void main(String[] args) {
-        LinkedHashSet lhs=new LinkedHashSet();
-        lhs.add("maher");
-        lhs.add("wasi");
-        lhs.add("malik");
-        LinkedHashSet Lhs=new LinkedHashSet();
-        Lhs.add("saboor");
-        Lhs.add("Danish");
-        lhs.addAll(Lhs);
-        Iterator<String>itr=lhs.iterator();
-        while (itr.hasNext()){
-            System.out.print(itr.next()+",");
+        TreeSet<Integer> ts=new TreeSet<>();
+        ts.add(50);
+        ts.add(30);
+        ts.add(123);
+        Iterator<Integer>IItr=ts.iterator();
+        while (IItr.hasNext()){
+            System.out.print(IItr.next()+" ' ");
         }
-        lhs.remove("malik");
-        lhs.isEmpty();
-        lhs.equals("dawood");
+        ts.isEmpty();
+        ts.add(50);
+        ts.clear();
+        System.out.println(ts);
 
     }
 }

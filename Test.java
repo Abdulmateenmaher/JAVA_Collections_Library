@@ -1,22 +1,22 @@
-package TreeSet;
+package Vector;
 
-import java.util.Iterator;
-import java.util.TreeSet;
+import java.util.Vector;
 
 public class Test {
     public static void main(String[] args) {
-        TreeSet<Integer> ts=new TreeSet<>();
-        ts.add(50);
-        ts.add(30);
-        ts.add(123);
-        Iterator<Integer>IItr=ts.iterator();
-        while (IItr.hasNext()){
-            System.out.print(IItr.next()+" ' ");
+        Vector<Integer> v=new Vector<>();
+        for (int i=0; i<=5; i++){
+            v.add(i);
+            System.out.print(v+" ");
+
+            System.out.println(v);
         }
-        ts.isEmpty();
-        ts.add(50);
-        ts.clear();
-        System.out.println(ts);
+        v.remove(3);
+        v.add(3,10);
+            for(int i=0; i<v.size(); i++){
+                System.out.print(v.get(i)+" ");
+            }
+
 
     }
 }

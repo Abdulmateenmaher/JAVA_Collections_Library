@@ -1,20 +1,21 @@
-package Dequeue;
+package HashMap;
 
-import java.util.ArrayDeque;
+import java.util.HashMap;
+import java.util.Iterator;
 
 public class Test {
     public static void main(String[] args) {
-        ArrayDeque ad=new ArrayDeque();
-        ad.add("maher");
-        ad.add("sabir");
-        ad.add("farid");
-        System.out.println(ad);
-        //adding in first or last possition
-        ad.addFirst("Sadiqi");
-        ad.addLast("malik");
-        ad.removeFirst();
-        ad.removeLast();
-        ad.clear();
+        HashMap hm=new HashMap();
+        hm.put(4,"wasi");
+        hm.put(1,"maher");
+        
+        hm.put(0,"farid");
+        hm.put(5,"doublow");
+        hm.get(4);
+        hm.remove(4);
+        System.out.println(hm.entrySet());
+        System.out.println(hm.containsKey(5));
 
+        System.out.print(hm);
     }
 }

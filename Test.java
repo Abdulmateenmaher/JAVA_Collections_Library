@@ -1,31 +1,20 @@
-package Stack;
+package Dequeue;
 
-import javax.print.attribute.HashAttributeSet;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Stack;
+import java.util.ArrayDeque;
 
 public class Test {
-    public static void main(String[] args) throws Exception {
-        Stack s=new Stack();
-     s.add(55);
-     s.add(55.3);
-     s.add('A');
-     s.add("maher");
-        System.out.println(s.peek());
-        System.out.println(s.pop());
-        System.out.println(s.indexOf('A'));
-
-        s.empty();
-        s.push(45);
-        s.push("sabir");
-        System.out.println(s);
-        s.pop();
-        s.pop();
-        System.out.println(s);
-        s.empty();
-        System.out.println(s);
+    public static void main(String[] args) {
+        ArrayDeque ad=new ArrayDeque();
+        ad.add("maher");
+        ad.add("sabir");
+        ad.add("farid");
+        System.out.println(ad);
+        //adding in first or last possition
+        ad.addFirst("Sadiqi");
+        ad.addLast("malik");
+        ad.removeFirst();
+        ad.removeLast();
+        ad.clear();
 
     }
-
 }
